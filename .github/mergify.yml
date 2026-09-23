@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM2 alternate config guard R9K2
+    conditions:
+      - author = livastic-vm2-primary-20260911
+      - -mergify-configuration-changed
+    actions:
+      label:
+        add:
+          - vm2-altcfg-guard-r9k2
